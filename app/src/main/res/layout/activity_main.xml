@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rock, Paper, Scissors"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Score Display -->
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player: 0 | Computer: 0"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Rounds Played -->
+    <TextView
+        android:id="@+id/tvRounds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rounds Played: 0"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Game Result -->
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make your move!"
+        android:textSize="20sp"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Image Buttons for Rock, Paper, and Scissors -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/btnRock"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/rock"
+        android:contentDescription="Rock"
+        android:layout_margin="8dp"/>
+
+    <ImageButton
+        android:id="@+id/btnPaper"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/paper"
+        android:contentDescription="Paper"
+        android:layout_margin="8dp"/>
+
+    <ImageButton
+        android:id="@+id/btnScissors"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/scissors"
+        android:contentDescription="Scissors"
+        android:layout_margin="8dp"/>
+    </LinearLayout>
+
+    <!-- Reset Button -->
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset Game"
+        android:layout_marginTop="24dp"
+        android:textSize="18sp" />
+
+</LinearLayout>
